@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
 import java.sql.Date;
 
-/**
- *
- * @author Anner Monge
- */
 public class Autor {
-    
+
     private int id_autor;
     private String cedula;
     private String nombres;
@@ -19,26 +11,26 @@ public class Autor {
     private String email;
     private Date fechaNac;
 
+    public Autor(int id_autor, String cedula, String nombres, String Apellidos,
+            String email, Date fechaNac) {
+        this.id_autor = id_autor;
+        this.cedula = cedula;
+        this.nombres = nombres;
+        this.Apellidos = Apellidos;
+        this.email = email;
+        this.fechaNac = fechaNac;
+    }
 
-   public Autor(int id_autor, String cedula, String nombres, String Apellidos,
-        String email, Date fechaNac){
-     this.id_autor = id_autor;
-     this.cedula = cedula;
-     this.nombres = nombres;
-     this.Apellidos = Apellidos;
-     this.email = email;
-     this.fechaNac = fechaNac;
-}
-public Autor( String cedula, String nombres, String Apellidos,
-String email, Date fechaNac){
+    public Autor(String cedula, String nombres, String Apellidos,
+            String email, Date fechaNac) {
 
-    this.cedula = cedula;
-    this.nombres = nombres;
-    this.Apellidos = Apellidos;
-    this.email = email;
-    this.fechaNac = fechaNac;
+        this.cedula = cedula;
+        this.nombres = nombres;
+        this.Apellidos = Apellidos;
+        this.email = email;
+        this.fechaNac = fechaNac;
 
-}
+    }
 
     public int getId_autor() {
         return id_autor;

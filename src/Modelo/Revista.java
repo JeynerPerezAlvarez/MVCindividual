@@ -1,39 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
+
 import java.sql.Time;
-/**
- *
- * @author COMPHP
- */
+
 public class Revista {
+
     private int numero;
     private String titulo;
-    private  int ayo;
+    private int ayo;
     private String issn;
     private float precio;
     private Time Horaventa;
-    
-public Revista(int numero, String titulo, int ayo, String issn,
-        float precio, Time Horaventa){
-     this.numero = numero;
-     this.titulo = titulo;
-     this.ayo = ayo;
-     this.issn = issn;
-     this.precio = precio;
-     this.Horaventa = Horaventa;
-}
-public Revista(String titulo, int ayo, String issn,
-float precio, Time Horaventa){
 
-     this.titulo = titulo;
-     this.ayo = ayo;
-     this.issn = issn;
-     this.precio = precio;
-     this.Horaventa = Horaventa;    
-}
+    public Revista(int numero, String titulo, int ayo, String issn,
+            float precio, Time Horaventa) {
+        this.numero = numero;
+        this.titulo = titulo;
+        this.ayo = ayo;
+        this.issn = issn;
+        this.precio = precio;
+        this.Horaventa = Horaventa;
+    }
+
+    public Revista(String titulo, int ayo, String issn,
+            float precio, Time Horaventa) {
+
+        this.titulo = titulo;
+        this.ayo = ayo;
+        this.issn = issn;
+        this.precio = precio;
+        this.Horaventa = Horaventa;
+    }
 
     public int getNumero() {
         return numero;
